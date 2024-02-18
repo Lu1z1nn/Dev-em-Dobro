@@ -20,7 +20,7 @@ body {
 
 .cabecalho .logo {
     display: flex;
-    gap: 15px;
+    gap: 16px;
 }
 
 .cabecalho .menu {
