@@ -6,6 +6,9 @@
 body {
     background-color: #282828;
     color: #fff;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
 }
 
 .cabecalho {
@@ -46,7 +49,7 @@ body {
 .principal {
     display: flex;
     position: relative;
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
 }
 
 .principal::after {
@@ -57,10 +60,19 @@ body {
     background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7) 35%, transparent 65%);
 }
 
-.principal .imagem-fundo {
+.principal #imagem-fundo {
     width: 100%;
-    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    transition: opacity 800ms;
+    transition: 2s all ease-in-out;
 }
+#slider img.selected {
+    opacity: 1;
+}
+
+
 
 .principal .informacoes {
     position: absolute;
@@ -72,7 +84,9 @@ body {
     gap: 30px;
     padding: 80px 80px 80px 170px;
     max-width: 780px;
+    
 }
+
 
 .principal .informacoes img {
     max-width: 150px;
@@ -91,6 +105,7 @@ body {
     font-size: 20px;
     line-height: 1.6;
 }
+
 
 .btn-comprar, .btn-plataformas {
     background-color: rgba(255, 255, 255, .1);

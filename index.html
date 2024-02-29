@@ -6,7 +6,6 @@
     <link rel="shortcut icon" href="src/imagens/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./Reset.css" />
     <link rel="stylesheet" href="./Styles.css" />
-    <link rel="stylesheet" href="./Responsivo.css" />
     <link href="https://fonts.cdnfonts.com/css/pricedown" rel="stylesheet">
     <title>GTA V</title>
 </head>
@@ -32,9 +31,14 @@
         </ul>
     </nav>
    </header>
-   <main class="principal" id="principal">
+   <main class="principal" id="slider">
 
-    <img class="imagem-fundo" src="./src/imagens/bg-main.png" alt="rapaz com oculos e moletom" />
+    
+        <img id="imagem-fundo" class="selected" src="./src/imagens/bg-main.png" alt="rapaz com oculos e moletom" />
+        <img id="imagem-fundo"  src="./src/imagens/imagem-gta-2.jpeg" alt="trevor, michael e franklin">
+        <img id="imagem-fundo" src="./src/imagens/imagem-gta-3.jpg" alt="capa do gta 5">
+        <img id="imagem-fundo" src="./src/imagens/imagem-gta-4.jpeg" alt="rapaz com cachorro">
+    
         
     </div>
         <div class="informacoes">
@@ -46,7 +50,7 @@
             
              <p class="text">Experimente os fenômenos do entretenimento Grand Theft Auto V e GTA Online.</p>
                         
-             <button class="btn-comprar" href="#comprar">COMPRE JÁ</button>
+             <button  class="btn-comprar" href="#comprar">COMPRE JÁ</button>
             
         </div>
    </main>
@@ -99,4 +103,5 @@
         </div>
    </section>
 </body>
+<script src="./script.js"></script>
 </html>
